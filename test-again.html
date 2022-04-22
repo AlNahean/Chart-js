@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/myStyle.css" />
+    <!-- Font awesome -->
+    <script defer src="js/all.js"></script>
+  </head>
+  <body data-theme-color="" class="[data-theme-color=dark]" id="bodyH">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-secondary">
+      <div class="container">
+        <a class="navbar-brand" href="#">Dashboard</a>
+        <button
+          class="navbar-toggler hidden-lg-up"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Home <span class="visually-hidden">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+    <div class="container-fluid" style="margin-top: 20px">
+      <div class="d-flex justify-content-between align-items-center">
+        <h1>Dashboard</h1>
+        <div class="form-check form-switch">
+          <label
+            for="#modeSwitcher"
+            class="form-check-label"
+            id="modeSwitcherLabel"
+            >Checkead</label
+          >
+          <input type="checkbox" class="form-check-input" id="modeSwitcher" />
+        </div>
+      </div>
+      <div class="row g-2">
+        <div class="col-12 col-lg-6 h-100">
+          <div class="row g-2 h-100 gg" id="targetId">
+            <div class="col-12 col-md-6 h-100">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="float-end float-icon">
+                    <i class="fa-solid fa-user-group"></i>
+                  </h5>
+                  <h5 class="text-muted fw-normal">Customers</h5>
+                  <h3 class="mt-2 mb-3">22,000</h3>
+                  <p class="mb-0 text-muted">
+                    <span style="color: green">
+                      <span><i class="fa-solid fa-up-long"></i></span>
+                      <span> 5.27%</span>
+                    </span>
+                    <span class="text-muted ps-2">Since last month</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 h-100">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h5 class="float-end float-icon">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </h5>
+                  <h5 class="text-muted fw-normal">Orders</h5>
+                  <h3 class="mt-2 mb-3">5,543</h3>
+                  <p class="mb-0 text-muted">
+                    <span style="color: red">
+                      <span><i class="fa-solid fa-down-long"></i></span>
+                      <span> 1.08% </span>
+                    </span>
+                    <span class="text-muted ps-2">Since last month</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 h-100">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="float-end float-icon">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  </h5>
+                  <h5 class="text-muted fw-normal">Revenew.</h5>
+                  <h3 class="mt-2 mb-3">$6,254</h3>
+                  <p class="mb-0 text-muted">
+                    <span style="color: red">
+                      <span><i class="fa-solid fa-down-long"></i></span>
+                      <span> 7% </span>
+                    </span>
+                    <span class="text-muted ps-2">Since last month</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 h-100">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="float-end float-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                  </h5>
+                  <h5 class="text-muted fw-normal">Growth</h5>
+                  <h3 class="mt-2 mb-3">+ 30.56%</h3>
+                  <p class="mb-0 text-muted">
+                    <span style="color: green">
+                      <span><i class="fa-solid fa-up-long"></i></span>
+                      <span> 4.87%</span>
+                    </span>
+                    <span class="text-muted ps-2">Since last month</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="card" id="actionId" style="min-height: 100%">
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 style="text-transform: uppercase">Projection vs Actuals</h5>
+                <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+              </div>
+
+              <div class="center test">
+                <div class="dummy-graph" style="max-height: 200px; width: 100%">
+                  <div class="chart">
+                    <canvas
+                      class="my-chart"
+                      id="myChart1"
+                      style="max-height: 200px; width: 100%"
+                    ></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-xl-8">
+          <div class="card">
+            <div class="card" id="actionId" style="min-height: 100%">
+              <div class="card-body">
+                <!--  -->
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="text-muted" style="text-transform: uppercase">
+                    Revenew
+                  </h5>
+                  <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                </div>
+
+                <div class="row bg-light text-center weekly-pay">
+                  <div class="col-6">
+                    <p class="mt-3 mb-0">Current Week</p>
+                    <h2 class="mb-3">$63,000</h2>
+                  </div>
+
+                  <div class="col-6">
+                    <p class="mt-3 mb-0">Previous Week</p>
+                    <h2 class="mb-3">$43,000</h2>
+                  </div>
+                </div>
+
+                <div
+                  class=""
+                  style="max-height: 363px; min-height: 363px; object-fit: fill"
+                >
+                  <div
+                    class="dummy-graph"
+                    style="max-height: 363px; width: auto"
+                  >
+                    <div class="chart">
+                      <canvas
+                        class="my-chart"
+                        id="myChart2"
+                        style="max-height: 363px; width: auto"
+                      ></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-4">
+          <div class="card" style="min-height: 100%">
+            <div class="card-body">
+              <div class="d-flex justify-content-between align-items-center">
+                <h5 class="text-muted" style="text-transform: uppercase">
+                  Revenew By Location
+                </h5>
+                <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+              </div>
+
+              <div class="" style="max-height: 363px; object-fit: fill">
+                <div
+                  class="dummy-graph"
+                  style="
+                    max-height: 270px;
+                    min-height: 270px;
+                    width: 100%;
+                    object-fit: fill;
+                  "
+                >
+                  <canvas
+                    class="my-chart"
+                    id="world-bubble"
+                    style="max-height: 96%; width: auto"
+                  ></canvas>
+                </div>
+              </div>
+
+              <div class="d-flex flex-column w-100 mt-4 text-muted">
+                <div class="progress-w-percent">
+                  <div>
+                    <h5 class="mt-0 mb-1 fw-normal">New York</h5>
+                    <div class="progress mb-2" style="height: 5px">
+                      <div
+                        class="progress-bar bg-primary"
+                        role="progressbar"
+                        style="width: 94%"
+                      ></div>
+                    </div>
+                  </div>
+                  <h5
+                    class="progress-value fw-bold w-100"
+                    style="margin-bottom: 0px"
+                  >
+                    72k
+                  </h5>
+                </div>
+                <!--  -->
+                <div class="progress-w-percent">
+                  <div>
+                    <h5 class="mt-0 mb-1 fw-normal">Mexico City</h5>
+                    <div class="progress mb-2" style="height: 5px">
+                      <div
+                        class="progress-bar bg-primary"
+                        role="progressbar"
+                        style="width: 94%"
+                      ></div>
+                    </div>
+                  </div>
+                  <h5
+                    class="progress-value fw-bold w-100"
+                    style="margin-bottom: 0px"
+                  >
+                    39k
+                  </h5>
+                </div>
+                <!--  -->
+                <div class="progress-w-percent">
+                  <div>
+                    <h5 class="mt-0 mb-1 fw-normal">Mumbai</h5>
+                    <div class="progress mb-2" style="height: 5px">
+                      <div
+                        class="progress-bar bg-primary"
+                        role="progressbar"
+                        style="width: 94%"
+                      ></div>
+                    </div>
+                  </div>
+                  <h5
+                    class="progress-value fw-bold w-100"
+                    style="margin-bottom: 0px"
+                  >
+                    25k
+                  </h5>
+                </div>
+                <!--  -->
+                <div class="progress-w-percent">
+                  <div>
+                    <h5 class="mt-0 mb-1 fw-normal">Tokyo</h5>
+                    <div class="progress mb-2" style="height: 5px">
+                      <div
+                        class="progress-bar bg-primary"
+                        role="progressbar"
+                        style="width: 94%"
+                      ></div>
+                    </div>
+                  </div>
+                  <h5
+                    class="progress-value fw-bold w-100"
+                    style="margin-bottom: 0px"
+                  >
+                    61k
+                  </h5>
+                </div>
+                <!-- <h5 class="mt-0 mb-1 fw-normal">Mexico City</h5>
+                <div class="progress mb-2" style="height: 5px">
+                  <div
+                    class="progress-bar bg-primary"
+                    role="progressbar"
+                    style="width: 56%"
+                  ></div>
+                </div>
+                <h5 class="mt-0 mb-1 fw-normal">Mumbai</h5>
+                <div class="progress mb-2" style="height: 5px">
+                  <div
+                    class="progress-bar bg-primary"
+                    role="progressbar"
+                    style="width: 73%"
+                  ></div>
+                </div>
+                <h5 class="mt-0 mb-1 fw-normal">Tokyo</h5>
+                <div class="progress mb-2" style="height: 5px">
+                  <div
+                    class="progress-bar bg-primary"
+                    role="progressbar"
+                    style="width: 65%"
+                  ></div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 
+        <div class="col-12 col-lg-3 col-md-6"><div class="card">1</div></div>
+        <div class="col-12 col-lg-3 col-md-6">
+          <div class="card">1</div>
+        </div>
+        <div class="col-12 col-lg-6"><div class="card">1</div></div> -->
+      </div>
+    </div>
+
+    <!-- <div class="container"> -->
+
+    <!-- <footer class="footer mb-5 mt-5">
+      <hr class=" mt-2 mb-2">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6">
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            2022 © Hyper - Coderthemes.com
+          </div>
+          <div class="col-md-6">
+            <div class="text-md-end footer-links d-none d-md-block">
+              <a href="javascript: void(0);">About</a>
+              <a href="javascript: void(0);">Support</a>
+              <a href="javascript: void(0);">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </footer> -->
+
+    <!-- <div class="center" style="min-height: 100vh">
+      <h1>Background Should be green</h1>
+    </div> -->
+
+    <script type="text/javascript" src="https://unpkg.com/papaparse"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/chartjs-chart-geo@3.5.2/build/index.umd.min.js"
+    ></script>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/myScript.js"></script>
+  </body>
+</html>

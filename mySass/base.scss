@@ -1,0 +1,65 @@
+// [data-theme-color="dark"] {
+//   $primary: green;
+// }
+
+// $primary: green;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// .card {
+//   border: none;
+// }
+
+:root {
+  --bs-body-bg: #fafbfe;
+}
+// .container,
+// .container-fluid {
+//   background-color: aqua;
+// }
+
+[data-theme-color="dark"] {
+  //   --bs-primary-rgb: 0, 0, 0;
+  //   --bs-blue: #000000;
+  --bs-body-color-rgb: 0, 0, 0;
+  --bs-body-bg-rgb: 0, 0, 0;
+  --bs-body-color: "#fff" !important;
+  --bs-body-bg: #272727;
+
+  color: rgb(55, 85, 221) !important;
+  body {
+    color: #fff !important;
+  }
+
+  .card {
+    background-color: #333335;
+    // border: 1px solid rgba(41, 27, 175, 0.3);
+    border: none;
+  }
+  .text-muted {
+    color: #fff !important;
+  }
+
+  .weekly-pay {
+    background-color: #307df136 !important;
+  }
+}
+
+// .progress-w-percent .progress-value {
+//   width: 40px;
+//   float: right;
+//   text-align: right;
+//   line-height: 20px;
+// }
+
+.progress-w-percent {
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.progress-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
